@@ -1,0 +1,57 @@
+.input-contenedor {
+    width: 100%;
+    max-width: 27rem;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    & .texto {
+        font-size: var(--step-1);
+        padding-bottom: var(--step--1);
+    }
+    & .input {
+        font-size: var(--step-1);
+        font-family: sans-serif;
+        text-align: center;
+        margin-bottom: var(--step--2);
+        position: relative;
+        padding: calc(var(--step--2) / 2) 0;
+        background-color: var(--secondary-color);
+        border: none;
+        border-radius: var(--step--2);
+        font-weight: bold;
+        color: var(--white);
+        &:hover {
+            background-color: var(--secondary-color-hover);
+        }
+        &::-webkit-calendar-picker-indicator {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent;
+            background: 0;
+            margin: 0;
+            opacity: 0;
+            pointer-events: auto;
+            cursor: pointer;
+        }
+        &::-webkit-datetime-edit-day-field {
+            padding: 0 var(--step--1);
+        }
+        &::-webkit-datetime-edit-month-field {
+            padding: 0 var(--step--1);
+        }
+        &::-webkit-datetime-edit-year-field {
+            padding: 0 var(--step--1);
+        }
+    }
+    & .error {
+        font-size: var(--step-0);
+        width: 100%;
+        background-color: var(--secondary-color);
+        color: var(--white);
+        padding: var(--step--2);
+    }
+}
+

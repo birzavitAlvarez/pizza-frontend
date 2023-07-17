@@ -1,0 +1,8 @@
+.perfil-usuario-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: calc(100vh - var(--header-height) - var(--step-1) * 2);
+    height: 100%;
+}

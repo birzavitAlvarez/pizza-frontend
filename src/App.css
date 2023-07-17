@@ -1,0 +1,66 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+    background-color: var(--primary-color);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 1280px;
+    min-height: calc(100vh - var(--header-height));
+    margin: 0 auto;
+    padding: var(--step-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--step-5);
+}
+
+h2 {
+    font-size: var(--step-4);
+}
+
+h3 {
+    font-size: var(--step-3);
+}
+
+h4 {
+    font-size: var(--step-2);
+}
+
+p,
+a {
+    font-size: var(--step-1);
+}
+
+a {
+    color: var(--gray);
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+button {
+    font-size: var(--step-1);
+    cursor: pointer;
+}
+
+.letra-numeros {
+    font-family: sans-serif;
+}

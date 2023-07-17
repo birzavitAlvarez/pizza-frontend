@@ -1,0 +1,91 @@
+.cabecera {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    width: 100%;
+    font-size: var(--step-3);
+    font-weight: bold;
+    height: var(--header-height);
+    z-index: 950;
+    & .contenido{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--step-0);
+        color: var(--white);
+        gap: var(--step-2);
+        & .opciones {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: var(--step-0);
+            width: 100%;
+            max-width: 30rem;
+            overflow: auto;
+            height: 100vh;
+            padding-top: calc(var(--step-4) * 2 + var(--step-0));
+            position: absolute;
+            top: 0;
+            right: calc(min(30rem, 100%) * -1);
+            background-color: var(--secondary-color);
+            transition: right .3s ease-in-out;
+            &.activo{
+                right: 0;
+            }
+            & a {
+                color: inherit;
+                font-size: var(--step-2);
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+        & .btn-opciones-contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--step-2);
+            & .notificaciones {
+                background-color: transparent;
+                border: none;
+                position: relative;
+                top: calc(var(--step--2) / 3);
+                &:hover svg {
+                    fill: #ddd;
+                }
+                & svg {
+                    width: var(--step-3);
+                    pointer-events: none;
+                    fill: #fff;
+                }
+                & .cantidad-notificacion {
+                    position: absolute;
+                    min-width: var(--step-1);
+                    height: var(--step-1);
+                    color: #fff;
+                    font-family: sans-serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: var(--step-0);
+                    padding: 0 1px;
+                    background-color: var(--secondary-color);
+                    border-radius: var(--step-0);
+                }
+            }
+        }
+        & .btn-opciones {
+            display: block;
+            height:  100%;
+            font-size: var(--step-2);
+            background-color: var(--secondary-color);
+            border: none;
+            color: inherit;
+            font-weight: inherit;
+            z-index: 999;
+        }
+    }
+}

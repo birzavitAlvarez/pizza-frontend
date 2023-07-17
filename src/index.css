@@ -1,0 +1,34 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    outline: none;
+}
+
+:root {
+    font-size: 10px;
+    --font-family: 'Raleway', sans-serif;
+    --step--2: clamp(0.69rem, 0.62rem + 0.43vw, 0.96rem);
+    --step--1: clamp(0.83rem, 0.73rem + 0.59vw, 1.20rem);
+    --step-0: clamp(1.00rem, 0.86rem + 0.80vw, 1.50rem);
+    --step-1: clamp(1.20rem, 1.01rem + 1.08vw, 1.88rem);
+    --step-2: clamp(1.44rem, 1.19rem + 1.45vw, 2.34rem);
+    --step-3: clamp(1.73rem, 1.39rem + 1.92vw, 2.93rem);
+    --step-4: clamp(2.07rem, 1.63rem + 2.54vw, 3.66rem);
+    --step-5: clamp(2.49rem, 1.90rem + 3.34vw, 4.58rem);
+
+    --primary-color : #f8fae5;
+    --max-width-container: 120rem;
+    --header-height: calc(var(--step-4) * 2);
+    
+    --secondary-color: #b81d32;
+    --secondary-color-hover: #ca2238;
+    --table-color-1: #dbb6bb;
+    --table-color-2: #dfaab0;
+    --gray: #2c2c2c;
+    --gray-hover: #353535;
+    --white: #ddd;
+}

@@ -1,0 +1,20 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60rem;
+    margin: var(--step-4) auto;
+    gap: var(--step-0);
+
+    & .botones {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: var(--step-1);
+        & * {
+            min-width: min-content;
+            gap: var(--step-0);
+        }
+    }
+}

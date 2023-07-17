@@ -1,0 +1,11 @@
+export const URL_PROVEEDORES = "http://localhost:8080/api/proveedor";
+export const URL_PRODUCTOS = "http://localhost:8080/api/producto";
+export const URL_USUARIO = "http://localhost:8080/api/usuario";
+export const URL_TRABAJADORES = "http://localhost:8080/api/trabajador";
+export const URL_COMPROBANTES = "http://localhost:8080/api/comprobante";
+export const URL_ALMACEN = "http://localhost:8080/api/almacen";
+export const URL_CARTA = "http://localhost:8080/api/carta";
+export const URL_INGREDIENTES = "http://localhost:8080/api/ingrediente";
+export const URL_VENTAS = "http://localhost:8080/api/venta";
+export const URL_DETALLE_VENTAS = "http://localhost:8080/api/detalle";
+export const URL_BOLETA = "http://localhost:8080/api/venta/boleta";

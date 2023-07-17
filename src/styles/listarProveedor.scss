@@ -1,0 +1,9 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: var(--step-2);
+    & a {
+        width: max-content;
+        margin: 0 auto;
+    }
+}

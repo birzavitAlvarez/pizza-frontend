@@ -1,0 +1,47 @@
+.contenedor {
+    overflow-x: auto;
+    &::-webkit-scrollbar{
+        width: 100%;
+        height: var(--step--2);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--secondary-color);
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: var(--step-1);
+    & thead td {
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+    & td {
+        padding: var(--step--2);
+        border: .1rem solid var(--gray);
+        font-family: sans-serif;
+    }
+    & tr {
+        background-color: var(--table-color-1);
+    }
+    & tbody tr:nth-child(odd) {
+        background-color: var(--table-color-2);
+    }
+    & .opciones {
+        display: flex;
+        gap: var(--step--2);
+        & button {
+            flex-grow: 1;
+            background-color: var(--gray);
+            color: var(--white);
+            border: none;
+            outline: none;
+            padding: var(--step--2);
+            transition: background-color .3s ease-out;
+            &:hover {
+                background-color: var(--gray-hover);
+            }
+        }
+    }
+}
